@@ -7,12 +7,11 @@
     <title>MRIT - Exskilence</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         * {
-            font-family: 'Nunito', sans-serif;
+            font-family: 'Poppins', sans-serif;
         }
 
         body {
@@ -20,11 +19,11 @@
         }
 
         .gradient-bg {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(#222E41);
         }
 
         .gradient-text {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: rgb(75 85 99 / var(--tw-text-opacity, 1));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -327,7 +326,9 @@
             z-index: 1;
         }
 
-        .hover-card:hover .image-pop img { filter: saturate(115%) contrast(105%); }
+        .hover-card:hover .image-pop img {
+            filter: saturate(115%) contrast(105%);
+        }
 
         .cool-card {
             background: rgba(255, 255, 255, 0.4);
@@ -353,12 +354,15 @@
             .feature-card.expanded {
                 grid-column: span 2;
             }
+
             .feature-card.shrunk {
                 transform: scale(0.95);
                 opacity: 0.9;
             }
+
             .feature-card.expanded .image-pop img {
-                height: 20rem; /* larger image when expanded */
+                height: 20rem;
+                /* larger image when expanded */
             }
         }
     </style>
@@ -383,202 +387,176 @@
         </div>
     </section>
 
-            <!-- Testimonials Section -->
-            <section class="py-20 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50">
-                <div class="container mx-auto px-6">
-                    <div class="text-center mb-16 fade-in">
-                        <h2 class="text-4xl font-bold mb-4 gradient-text">Impact and Outcomes: Building Career Success</h2>
-                        <p class="text-xl text-gray-600">The results of our partnership speak for themselves. Through our joint
-                            efforts, we have seen students from MRIT achieve remarkable success.</p>
-                    </div>
-        
-                    <!-- Success Stories Section -->
-                    <div class="mb-16 fade-in">
-                        <h3 class="text-2xl font-bold mb-8 text-center gradient-text">Placement Success Stories</h3>
-                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                            <div class="bg-white rounded-xl p-6 shadow-lg text-center">
-                                <div class="mb-4 relative">
-                                    <video id="video-varun" class="w-full h-56 object-cover rounded-lg"
-                                        playsinline controls preload="metadata"
-                                        poster="./public/Zeta.png">
-                                        <source src="./public/Testimonial-videos/Varun k.mp4" type="video/mp4">
-                                    </video>
-                                    <button aria-label="Play video" onclick="startVideo('video-varun', this)" class="absolute inset-0 flex items-center justify-center text-white">
-                                        <span class="w-16 h-16 rounded-full bg-black/50 hover:bg-black/60 transition flex items-center justify-center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8">
-                                                <path d="M8 5v14l11-7z" />
-                                            </svg>
-                                        </span>
-                                    </button>
-                                </div>
-                                <h4 class="font-semibold text-lg mb-1">Varun K</h4>
-                                <p class="text-gray-600 mb-1">Zeta, Bengaluru</p>
-                                <p class="text-m text-gray-500">Academic Year 2025-26</p>
-                            </div>
-        
-                            <div class="bg-white rounded-xl p-6 shadow-lg text-center">
-                                <div class="mb-4 relative">
-                                    <video id="video-suhas" class="w-full h-56 object-cover rounded-lg"
-                                        playsinline controls preload="metadata"
-                                        poster="./public/Images/Zeta.png">
-                                        <source src="./public/Testimonial-videos/Suhas.mp4" type="video/mp4">
-                                    </video>
-                                    <button aria-label="Play video" onclick="startVideo('video-suhas', this)" class="absolute inset-0 flex items-center justify-center text-white">
-                                        <span class="w-16 h-16 rounded-full bg-black/50 hover:bg-black/60 transition flex items-center justify-center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8">
-                                                <path d="M8 5v14l11-7z" />
-                                            </svg>
-                                        </span>
-                                    </button>
-                                </div>
-                                <h4 class="font-semibold text-lg mb-1">Suhas</h4>
-                                <p class="text-gray-600 mb-1">Zeta, Bengaluru</p>
-                                <p class="text-m text-gray-500">Academic Year 2025-26</p>
-                            </div>
-        
-                            <div class="bg-white rounded-xl p-6 shadow-lg text-center">
-                                <div class="mb-4 relative">
-                                    <video id="video-nikitha" class="w-full h-56 object-cover rounded-lg"
-                                        playsinline controls preload="metadata"
-                                        poster="./public/Nikhitha Sai.png">
-                                        <source src="./public/testimonials/nikitha.mp4" type="video/mp4">
-                                    </video>
-                                    <button aria-label="Play video" onclick="startVideo('video-nikitha', this)" class="absolute inset-0 flex items-center justify-center text-white">
-                                        <span class="w-16 h-16 rounded-full bg-black/50 hover:bg-black/60 transition flex items-center justify-center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8">
-                                                <path d="M8 5v14l11-7z" />
-                                            </svg>
-                                        </span>
-                                    </button>
-                                </div>
-                                <h4 class="font-semibold text-lg mb-1">Nikitha Sai</h4>
-                                <p class="text-gray-600 mb-1">Deloitte, Bengaluru</p>
-                                <p class="text-m text-gray-500">Academic Year 2025-26</p>
-                            </div>
-        
-                            <div class="bg-white rounded-xl p-6 shadow-lg text-center">
-                                <div class="mb-4 relative">
-                                    <video id="video-shobha" class="w-full h-56 object-cover rounded-lg"
-                                        playsinline controls preload="metadata"
-                                        poster="./public/Shobha PN.png">
-                                        <source src="./public/testimonials/shobha.mp4" type="video/mp4">
-                                    </video>
-                                    <button aria-label="Play video" onclick="startVideo('video-shobha', this)" class="absolute inset-0 flex items-center justify-center text-white">
-                                        <span class="w-16 h-16 rounded-full bg-black/50 hover:bg-black/60 transition flex items-center justify-center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8">
-                                                <path d="M8 5v14l11-7z" />
-                                            </svg>
-                                        </span>
-                                    </button>
-                                </div>
-                                <h4 class="font-semibold text-lg mb-1">Shobha</h4>
-                                <p class="text-gray-600 mb-1">Deloitte, Bengaluru</p>
-                                <p class="text-m text-gray-500">Academic Year 2025-26</p>
-                            </div>
-        
-                            <div class="bg-white rounded-xl p-6 shadow-lg text-center">
-                                <div class="mb-4 relative">
-                                    <video id="video-varshitha" class="w-full h-56 object-cover rounded-lg"
-                                        playsinline controls preload="metadata"
-                                        poster="./public/Images/igniteIq.png">
-                                        <source src="./public/testimonials/varshitha.mp4" type="video/mp4">
-                                    </video>
-                                    <button aria-label="Play video" onclick="startVideo('video-varshitha', this)" class="absolute inset-0 flex items-center justify-center text-white">
-                                        <span class="w-16 h-16 rounded-full bg-black/50 hover:bg-black/60 transition flex items-center justify-center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8">
-                                                <path d="M8 5v14l11-7z" />
-                                            </svg>
-                                        </span>
-                                    </button>
-                                </div>
-                                <h4 class="font-semibold text-lg mb-1">Varshitha</h4>
-                                <p class="text-gray-600 mb-1">IgniteIQ, Bengaluru</p>
-                                <p class="text-m text-gray-500">Academic Year 2025-26</p>
-                            </div>
-        
-                            <div class="bg-white rounded-xl p-6 shadow-lg text-center">
-                                <div class="mb-4 relative">
-                                    <video id="video-namitha" class="w-full h-56 object-cover rounded-lg"
-                                        playsinline controls preload="metadata"
-                                        poster="./public/ThoughtProcess.png">
-                                        <source src="./public/testimonials/namitha.mp4" type="video/mp4">
-                                    </video>
-                                    <button aria-label="Play video" onclick="startVideo('video-namitha', this)" class="absolute inset-0 flex items-center justify-center text-white">
-                                        <span class="w-16 h-16 rounded-full bg-black/50 hover:bg-black/60 transition flex items-center justify-center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8">
-                                                <path d="M8 5v14l11-7z" />
-                                            </svg>
-                                        </span>
-                                    </button>
-                                </div>
-                                <h4 class="font-semibold text-lg mb-1">Namitha</h4>
-                                <p class="text-gray-600 mb-1">Thought Process, Bengaluru</p>
-                                <p class="text-m text-gray-500">Academic Year 2025-26</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-    <!-- About Section -->
-    <section class="py-10 bg-gray-50">
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50">
         <div class="container mx-auto px-6">
-            <div class="flex flex-col lg:flex-row items-center gap-12">
-                <div class="lg:w-1/2 fade-in">
-                    <h2 class="text-4xl font-bold mb-6 gradient-text">Hear from the Principal</h2>
-                    <p class="text-lg text-gray-600 mb-4">Information Technology today is changing faster than ever,
-                        with AI changing every previous rule. The IT industry today cannot afford long lead times to
-                        make their freshers productive, and is therefore looking for job-ready talent.
-                        <br>
-                        <br>
+            <!-- Success Stories Section -->
+            <div class="mb-16 fade-in flex flex-col items-center justify-center text-center">
+                <h3 class="text-4xl font-bold mb-8 gradient-text">
+                    Placement Success Stories
+                </h3>
+                <p class="text-lg text-gray-600 mb-4 max-w-2xl">
+                    Some of the students whom we have placed successfully for the current academic year 2025-26 at reputable IT companies
+                </p>
+            </div>
+            
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-white rounded-xl p-6 shadow-lg text-center">
+                        <div class="mb-4 relative">
+                            <video id="video-varun" class="w-full h-56 object-cover rounded-lg" playsinline controls
+                                preload="metadata" poster="./public/Zeta.png">
+                                <source src="./public/Testimonial-videos/Varun k.mp4" type="video/mp4">
+                            </video>
+                            <button aria-label="Play video" onclick="startVideo('video-varun', this)"
+                                class="absolute inset-0 flex items-center justify-center text-white">
+                                <span
+                                    class="w-16 h-16 rounded-full bg-black/50 hover:bg-black/60 transition flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        class="w-8 h-8">
+                                        <path d="M8 5v14l11-7z" />
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                        <h4 class="font-semibold text-lg mb-1">Varun K</h4>
+                        <p class="text-gray-600 mb-1">Now working as an SDET at Zeta Bengaluru</p>
+                        <p class="text-m text-gray-500">Academic Year 2025-26</p>
+                    </div>
 
-                        As a sincere academic institution, committed to give our students the best chance of a
-                        successful career, we found it a huge challenge to meet this industry demand successfully. To
-                        overcome this challenge, we have now partnered with Exskilence Upskilling Bengaluru, a firm that
-                        is focused on skilling and placement support. The results of this association have been very
-                        heartening so far.
-                        <br>
-                        <br>
+                    <div class="bg-white rounded-xl p-6 shadow-lg text-center">
+                        <div class="mb-4 relative">
+                            <video id="video-suhas" class="w-full h-56 object-cover rounded-lg" playsinline controls
+                                preload="metadata" poster="./public/Images/Zeta.png">
+                                <source src="./public/Testimonial-videos/Suhas.mp4" type="video/mp4">
+                            </video>
+                            <button aria-label="Play video" onclick="startVideo('video-suhas', this)"
+                                class="absolute inset-0 flex items-center justify-center text-white">
+                                <span
+                                    class="w-16 h-16 rounded-full bg-black/50 hover:bg-black/60 transition flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        class="w-8 h-8">
+                                        <path d="M8 5v14l11-7z" />
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                        <h4 class="font-semibold text-lg mb-1">Suhas</h4>
+                        <p class="text-gray-600 mb-1">Now working as an SDET at Zeta Bengaluru</p>
+                        <p class="text-m text-gray-500">Academic Year 2025-26</p>
+                    </div>
 
-                        The Exskilence team is extremely committed to making the student truly job-ready. Their program
-                        delivers intense practical training using their own proprietary Learning Management System and
-                        Coding Platform. This is supplemented further by detailed on-site practical workshops.
-                        Personally, what I liked most about their program is how they track each student’s progress
-                        every day. And this is shared with both the student and the college, for suitable action.
-                        <br>
-                        <br>
+                    <div class="bg-white rounded-xl p-6 shadow-lg text-center">
+                        <div class="mb-4 relative">
+                            <video id="video-nikitha" class="w-full h-56 object-cover rounded-lg" playsinline controls
+                                preload="metadata" poster="./public/Nikhitha Sai.png">
+                                <source src="./public/testimonials/nikitha.mp4" type="video/mp4">
+                            </video>
+                            <button aria-label="Play video" onclick="startVideo('video-nikitha', this)"
+                                class="absolute inset-0 flex items-center justify-center text-white">
+                                <span
+                                    class="w-16 h-16 rounded-full bg-black/50 hover:bg-black/60 transition flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        class="w-8 h-8">
+                                        <path d="M8 5v14l11-7z" />
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                        <h4 class="font-semibold text-lg mb-1">Nikitha Sai</h4>
+                        <p class="text-gray-600 mb-1">Now working as an Analyst at Deloitte</p>
+                        <p class="text-m text-gray-500">Academic Year 2025-26</p>
+                    </div>
 
-                        I am extremely optimistic of achieving some great results for our students through this
-                        partnership with Exskilence in the years to come.
-                    </p>
-                    <p class="font-semibold text-xl">Dr. Abhinandan </p>
-                    <p class="text-lg text-gray-600 mb-4"> Principal, <br> Mysuru Royal Institute of Technology (MRIT)
-                    </p>
-                    </p>
-                </div>
-                <div class="lg:w-1/2 fade-in">
-                    <img src="./public/Images/mrit-principal.png" alt="MRIT Principal"
-                        class="w-full h-full object-cover rounded-xl">
+                    <div class="bg-white rounded-xl p-6 shadow-lg text-center">
+                        <div class="mb-4 relative">
+                            <video id="video-shobha" class="w-full h-56 object-cover rounded-lg" playsinline controls
+                                preload="metadata" poster="./public/Shobha PN.png">
+                                <source src="./public/testimonials/shobha.mp4" type="video/mp4">
+                            </video>
+                            <button aria-label="Play video" onclick="startVideo('video-shobha', this)"
+                                class="absolute inset-0 flex items-center justify-center text-white">
+                                <span
+                                    class="w-16 h-16 rounded-full bg-black/50 hover:bg-black/60 transition flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        class="w-8 h-8">
+                                        <path d="M8 5v14l11-7z" />
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                        <h4 class="font-semibold text-lg mb-1">Shobha</h4>
+                        <p class="text-gray-600 mb-1">Now working as an Analyst at Deloitte</p>
+                        <p class="text-m text-gray-500">Academic Year 2025-26</p>
+                    </div>
+
+                    <div class="bg-white rounded-xl p-6 shadow-lg text-center">
+                        <div class="mb-4 relative">
+                            <video id="video-varshitha" class="w-full h-56 object-cover rounded-lg" playsinline controls
+                                preload="metadata" poster="./public/Images/igniteIq.png">
+                                <source src="./public/testimonials/varshitha.mp4" type="video/mp4">
+                            </video>
+                            <button aria-label="Play video" onclick="startVideo('video-varshitha', this)"
+                                class="absolute inset-0 flex items-center justify-center text-white">
+                                <span
+                                    class="w-16 h-16 rounded-full bg-black/50 hover:bg-black/60 transition flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        class="w-8 h-8">
+                                        <path d="M8 5v14l11-7z" />
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                        <h4 class="font-semibold text-lg mb-1">Varshitha</h4>
+                        <p class="text-gray-600 mb-1">Now working as a Junior Software Engineer at IgniteIQ</p>
+                        <p class="text-m text-gray-500">Academic Year 2025-26</p>
+                    </div>
+
+                    <div class="bg-white rounded-xl p-6 shadow-lg text-center">
+                        <div class="mb-4 relative">
+                            <video id="video-namitha" class="w-full h-56 object-cover rounded-lg" playsinline controls
+                                preload="metadata" poster="./public/ThoughtProcess.png">
+                                <source src="./public/testimonials/namitha.mp4" type="video/mp4">
+                            </video>
+                            <button aria-label="Play video" onclick="startVideo('video-namitha', this)"
+                                class="absolute inset-0 flex items-center justify-center text-white">
+                                <span
+                                    class="w-16 h-16 rounded-full bg-black/50 hover:bg-black/60 transition flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        class="w-8 h-8">
+                                        <path d="M8 5v14l11-7z" />
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                        <h4 class="font-semibold text-lg mb-1">Namitha</h4>
+                        <p class="text-gray-600 mb-1">Now working as an Intern Project Trainee at <br> Thought Process</p>
+                        <p class="text-m text-gray-500">Academic Year 2025-26</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- About Section -->
+
     <section class=" bg-gray-50">
         <div class="container mx-auto px-6">
             <div class="flex flex-col lg:flex-row items-center gap-12">
                 <div class="lg:w-1/2 fade-in">
-                    <h2 class="text-4xl font-bold mb-6 gradient-text">Bridging Industry & Academia</h2>
+                    <h2 class="text-4xl font-bold pb-6 gradient-text">Bridging Industry & Academia</h2>
                     <p class="text-lg text-gray-600 mb-4">At Exskilence, we believe that a strong bridge between
-                        industry and academia is essential for building a skilled, future-ready workforce. We partner
-                        with colleges to address skilling and practical training needs while they focus on academic
-                        performance.</p>
-                    <p class="text-lg text-gray-600 mb-4">Our model envisages parallel progression of academic learning
-                        and practical training for 12 months through the 6th and 7th semester of engineering studies.
+                        industry and academia is essential for building a skilled, future-ready workforce. With this end
+                        in view, we plan to work in partnership with colleges, where the colleges take care of the
+                        academic performance of the students, while we address their skilling and practical training
+                        needs. </p>
+                    <p class="text-lg text-gray-600 mb-4">Our model envisages that both these tracks - of (a) academic learning and (b) skilling / practical training - progress in parallel for 12 months - right through the 6th and 7th semester of the engineering studies.
+                        <br>
+                        In this regard, we have partnered with Mysuru Royal Institute of Technology (MRIT), an engineering college in Mandya, Karnataka.
                     </p>
-                    <p class="text-lg text-gray-600">We have partnered with Mysuru Royal Institute of Technology (MRIT),
-                        an engineering college in Mandya, Karnataka, serving the social purpose of creating
-                        opportunities for underserved students from farming communities.</p>
+                    <p class="text-lg text-gray-600">MRIT was established in the year 2015. The founders of the college are all eminent retired professors of engineering colleges. The mission of the college is to provide very high quality education for the aspiring students. Most of the MRIT students hail from low income families that are engaged in farming in and around Mandya. Despite its noble intent and sincere efforts, MRIT has been finding it difficult to provide adequate placement opportunities for its students.
+                        <br>
+                        Therefore, our partnership with MRIT, also serves the social purpose of creating opportunities for the underserved.
+                    </p>
                 </div>
                 <div class="lg:w-1/2 fade-in">
                     <svg viewBox="0 0 400 300" class="w-full h-auto">
@@ -616,7 +594,7 @@
     <section class="py-20 bg-gray-50">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16 fade-in">
-                <h2 class="text-4xl font-bold mb-6 gradient-text">Bridging the Skills Gap: Our Shared Vision</h2>
+                <h2 class="text-4xl font-bold pb-6 gradient-text">Bridging the Skills Gap: Our Shared Vision</h2>
                 <p class="text-xl text-gray-600 max-w-4xl mx-auto">The rapid pace of technological innovation with the
                     advent of Artificial Intelligence (AI) means that a traditional engineering curriculum, while
                     foundational, needs to be supplemented with practical, hands-on training on the latest tools and
@@ -671,7 +649,7 @@
     <section class="py-20 bg-white">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16 fade-in">
-                <h2 class="text-4xl font-bold   mb-4 gradient-text">Our Comprehensive Training Approach</h2>
+                <h2 class="text-4xl font-bold pb-6 gradient-text">Our Comprehensive Training Approach</h2>
                 <p class="text-xl text-gray-600">A holistic learning experience designed to bridge the gap between
                     academic knowledge and industry requirements</p>
             </div>
@@ -805,6 +783,51 @@
                             We leverage our network of IT companies to facilitate placements, connecting students with
                             companies for internships and full-time roles.</p>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Hear from the principal -->
+
+    <section class="py-10 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-1/2 fade-in">
+                    <h2 class="text-4xl font-bold mb-6 gradient-text">Hear from the Principal</h2>
+                    <p class="text-lg text-gray-600 mb-4">Information Technology today is changing faster than ever,
+                        with AI changing every previous rule. The IT industry today cannot afford long lead times to
+                        make their freshers productive, and is therefore looking for job-ready talent.
+                        <br>
+                        <br>
+
+                        As a sincere academic institution, committed to give our students the best chance of a
+                        successful career, we found it a huge challenge to meet this industry demand successfully. To
+                        overcome this challenge, we have now partnered with Exskilence Upskilling Bengaluru, a firm that
+                        is focused on skilling and placement support. The results of this association have been very
+                        heartening so far.
+                        <br>
+                        <br>
+
+                        The Exskilence team is extremely committed to making the student truly job-ready. Their program
+                        delivers intense practical training using their own proprietary Learning Management System and
+                        Coding Platform. This is supplemented further by detailed on-site practical workshops.
+                        Personally, what I liked most about their program is how they track each student’s progress
+                        every day. And this is shared with both the student and the college, for suitable action.
+                        <br>
+                        <br>
+
+                        I am extremely optimistic of achieving some great results for our students through this
+                        partnership with Exskilence in the years to come.
+                    </p>
+                    <p class="font-semibold text-xl">Dr. Abhinandan </p>
+                    <p class="text-lg text-gray-600 mb-4"> Principal, <br> Mysuru Royal Institute of Technology (MRIT)
+                    </p>
+                    </p>
+                </div>
+                <div class="lg:w-1/2 fade-in">
+                    <img src="./public/Images/mrit-principal.png" alt="MRIT Principal"
+                        class="w-full h-full object-cover rounded-xl">
                 </div>
             </div>
         </div>
